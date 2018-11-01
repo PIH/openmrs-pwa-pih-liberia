@@ -1,5 +1,41 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Development Enviroment Setup
+
+##
+
+1. Clone this repo locally
+2. npm install
+3. Clone the https://github.com/openmrs/openmrs-react-components locally as well
+4. npm install
+5. Link to use your local version of openmrs-react-components:
+    * In your openmrs-react-components directory: npm link
+    * In the top level directory of this project: npm link @openmrs/react-components
+6. To avoid an error with a duplicate version of React, link React @openmrs/react-components *back* to the React in this project:
+    * cd path-to-your-local-openmrs-react-components
+    * npm link path-to-your-local-pih-liberia-project/node_modules/react
+    Reference: https://stackoverflow.com/questions/33157904/how-to-avoid-loaded-two-copies-of-react-error-when-developing-an-external-comp
+7. In your openmrs-react-components directory build and watch the code: npm run build:watch
+8. In the directory where you have this project checked out: npm start
+
+## Setting the URL of OpenMRS server
+
+When developing, you can customize which server the app connects to:
+
+Create a file ".env.local" at the root level of this repo which sets two environmental variables setting the server address and context path.  For instance:
+
+```
+REACT_APP_SERVER_ADDRESS=http://localhost:8080/
+REACT_APP_SERVER_CONTEXT_PATH=openmrs
+```
+
+## Debugging on a tablet
+
+Need to set Android to remote debugging using the "magic" steps here:
+
+https://developers.google.com/web/tools/chrome-devtools/remote-debugging/?utm_source=dcc&utm_medium=redirect&utm_campaign=2016q3
+
+
 ## Available Scripts
 
 In the project directory, you can run:
