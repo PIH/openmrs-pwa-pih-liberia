@@ -1,11 +1,14 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { Switch } from 'react-router-dom';
-import { LoadingView } from '@openmrs/react-components';
+import { Route, Switch } from 'react-router-dom';
+import { Logout, LoadingView } from '@openmrs/react-components';
 import './App.css';
 import setupStoreAndPersistor, { history } from './store';
 import { ConnectedRouter } from 'connected-react-router';
 import { PersistGate } from 'redux-persist/lib/integration/react';
+import LoginPage from './login/LoginPage'
+import Layout from './layout/Layout'
+import HomePage from './home/HomePage'
 
 const { store, persistor } = setupStoreAndPersistor();
 
@@ -17,7 +20,19 @@ const App = props => {
       <PersistGate loading={<LoadingView />} persistor={persistor}>
         <ConnectedRouter history={history}>
           <Switch>
-
+            <Route
+              component={LoginPage}
+              path="/login"
+            />
+            <Route
+              component={Logout}
+              path="/logout"
+            />
+            <Layout
+              component={HomePage}
+              exact
+              path="/"
+            />
           </Switch>
         </ConnectedRouter>
       </PersistGate>
