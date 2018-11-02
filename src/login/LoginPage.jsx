@@ -8,9 +8,9 @@ import {LoginPage as ReactComponentsLoginPage} from '@openmrs/react-components';
 const LoginPage = props => {
   return (
     <ReactComponentsLoginPage
-  //    homeImage={homeImage}
+//    homeImage={homeImage}                 <--- Add your home page backgroup image here
       location={props.location}
-  //    logo={logo}
+  //    logo={logo}                         <-- Add your logo here
     />
   );
 };

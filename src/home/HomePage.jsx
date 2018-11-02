@@ -6,7 +6,7 @@ const HomePage = (props) => {
 
   return (
     <ReactComponentsHomePage
-//      homeImage={homeImage}
+//      homeImage={homeImage}  <--- Add your home page backgroup image here
     />
   );
 

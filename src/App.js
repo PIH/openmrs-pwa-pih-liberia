@@ -30,6 +30,8 @@ import LoginPage from './login/LoginPage'
 import Layout from './layout/Layout'
 import HomePage from './home/HomePage'
 import PatientSearch from './search/PatientSearch'
+import MyFirstForm from './demo/MyFirstForm'
+import MyFirstQueue from './demo/MyFirstQueue'
 
 // add any more fonts you wish to use to the import above and to here
 fontAwesomeLibrary.add(faBars, faEdit, faPills, faUser, faMapMarker, faCog, faKey, faSignOutAlt, faRibbon, faVial, faChild, faSearch, faNotesMedical, faHeart, faUserMd, faLemon, faHome);
@@ -63,12 +65,12 @@ const App = props => {
               redirectOnLogin="/"
             />
             <Layout
-              component={null}
+              component={MyFirstQueue}
               path="/demo/queue"
               redirectOnLogin="/"
             />
             <Layout
-              component={null}
+              component={MyFirstForm}
               path="/demo/form"
               redirectOnLogin="/"
             />
