@@ -12,6 +12,7 @@ import logger from 'redux-logger';
 import createSagaMiddleware from 'redux-saga';
 import { all } from 'redux-saga/effects';
 import { reducer as reduxFormReducer } from 'redux-form';
+import { reducer as toastrReducer } from 'react-redux-toastr';
 import { connectRouter, routerMiddleware } from 'connected-react-router';
 import { sagas as openmrsSagas, reducers as openmrsReducers, LOGIN_TYPES } from '@openmrs/react-components';
 import { persistStore, persistReducer } from 'redux-persist';
@@ -45,7 +46,8 @@ const middlewares = [
 
 const combinedReducer = combineReducers({
   openmrs: openmrsReducers,
-  form: reduxFormReducer
+  form: reduxFormReducer,
+  toastr: toastrReducer
 });
 
 const rootReducer = (state, action) => {
