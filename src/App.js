@@ -29,6 +29,7 @@ import { PersistGate } from 'redux-persist/lib/integration/react';
 import LoginPage from './login/LoginPage'
 import Layout from './layout/Layout'
 import HomePage from './home/HomePage'
+import PatientSearch from './search/PatientSearch'
 
 // add any more fonts you wish to use to the import above and to here
 fontAwesomeLibrary.add(faBars, faEdit, faPills, faUser, faMapMarker, faCog, faKey, faSignOutAlt, faRibbon, faVial, faChild, faSearch, faNotesMedical, faHeart, faUserMd, faLemon, faHome);
@@ -55,6 +56,21 @@ const App = props => {
               component={HomePage}
               exact
               path="/"
+            />
+            <Layout
+              component={PatientSearch}
+              path="/patientSearch"
+              redirectOnLogin="/"
+            />
+            <Layout
+              component={null}
+              path="/demo/queue"
+              redirectOnLogin="/"
+            />
+            <Layout
+              component={null}
+              path="/demo/form"
+              redirectOnLogin="/"
             />
           </Switch>
         </ConnectedRouter>

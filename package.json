@@ -7,6 +7,8 @@
     "@fortawesome/free-solid-svg-icons": "^5.2.0",
     "@fortawesome/react-fontawesome": "^0.1.2",
     "@openmrs/react-components": "^0.2.0-SNAPSHOT.8",
+    "ag-grid": "^18.1.2",
+    "ag-grid-react": "^18.1.0",
     "bootstrap": "^3.3.7",
     "history": "^4.7.2",
     "react": "^16.6.0",
