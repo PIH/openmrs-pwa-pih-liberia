@@ -20,7 +20,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Setting the URL of OpenMRS server
 
-When developing, you can customize which server the app connects to:
+You will need to set up the URL and path of the OpenMRS server to connect to. 
 
 Create a file ".env.local" at the root level of this repo which sets two environmental variables setting the server address and context path.  For instance:
 
