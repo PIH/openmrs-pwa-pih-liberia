@@ -48,6 +48,7 @@ let MyFirstQueue = props => {
   ];
 
   const FILTERS = [
+    (patient) => (patient.visit),  // only patients that have an active visit
     patientObjByEncounterTypeFilter(ENCOUNTER_TYPES.VitalsEncounterType.uuid, 'exclude')
   ];
 
