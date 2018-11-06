@@ -8,7 +8,7 @@ const Layout = props => {
 
   const NAV_MENU_PAGES = {
     '/' : { display : 'Home', icon : 'home'},
-    '/patientSearch' : { display : 'Search Patient', icon : 'search'},
+ //   '/patientSearch' : { display : 'Search Patient', icon : 'search'},
     '/demo/queue' : { display : 'My First Queue', icon : 'notes-medical'}
   };
 
