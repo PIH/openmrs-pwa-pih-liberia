@@ -9,6 +9,6 @@ it('renders without crashing', () => {
 });
 
 it('renders header', () => {
-  const patientSearch = shallow(<PatientSearch/>)
+  const patientSearch = shallow(<PatientSearch/>);
   expect(patientSearch.contains(<h3><Label>Patient Search</Label></h3>)).toEqual(true);
 });
