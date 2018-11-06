@@ -11,7 +11,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 5. Link to use your local version of openmrs-react-components:
     * In your openmrs-react-components directory: npm link
     * In the top level directory of this project: npm link @openmrs/react-components
-    * NOTE: you will rerun "npm link @openmrs/react-components" after each "npm install" you perform
+    * NOTE: you will need to rerun "npm link @openmrs/react-components" after each "npm install" you perform
 6. To avoid an error with a duplicate version of React, link React @openmrs/react-components *back* to the React in this project:
     * cd path-to-your-local-openmrs-react-components
     * npm link path-to-your-local-pih-liberia-project/node_modules/react
