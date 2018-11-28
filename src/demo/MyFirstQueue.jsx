@@ -34,7 +34,7 @@ let MyFirstQueue = props => {
   const FETCH_LIST_ACTION_CREATOR =
     () => {
       if (!props.updating) {
-        props.dispatch(visitActions.fetchActiveVisits((props.session.sessionLocation ? props.session.sessionLocation.uuid : null)));
+        props.dispatch(visitActions.setPatientStoreWithActiveVisitPatients((props.session.sessionLocation ? props.session.sessionLocation.uuid : null)));
       }
     };
 
