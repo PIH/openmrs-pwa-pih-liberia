@@ -1,5 +1,5 @@
 import React from "react";
-import {Obs, Section, formValidations, EncounterFormPage, visitActions, selectors } from '@openmrs/react-components';
+import {Obs, Section, formValidations, EncounterFormPanel, visitActions, selectors } from '@openmrs/react-components';
 import { Grid, Row, FormGroup, ControlLabel, Col } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { ENCOUNTER_ROLES, ENCOUNTER_TYPES, CONCEPTS } from "../constants";
@@ -70,7 +70,7 @@ let MyFirstForm = (props) => {
   );
 
   return (
-    <EncounterFormPage
+    <EncounterFormPanel
       encounterRole={ENCOUNTER_ROLES.UnknownEncounterRole}
       encounterType={ENCOUNTER_TYPES.VitalsEncounterType}
       formContent={formContent}
